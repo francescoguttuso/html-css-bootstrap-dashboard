@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body mb-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/img/duck.png" alt="Bootstrap" width="50" height="50">
@@ -41,10 +41,11 @@
             </div>
         </div>
     </nav>
-    <div class="container my-4"></div>
-    <h3 class="d-inline my-4">Nuovo Libro</h3>
+    <div class="container"></div>
+    <h3 class="d-inline my-4 m-4">Nuovo Libro</h3>
     <!--Form-->
-    <form class="row g-3">
+    <!--name e surname-->
+    <form class="row g-2 m-2">
         <div class="col-6">
             <label for="NomeAutore" class="form-label">Nome Autore</label>
             <input type="text" class="form-control" id="NomeAutore" placeholder="Inserisci il nome dell'autore">
@@ -56,4 +57,26 @@
         <div class="col-12">
             <label for="Titololibro" class="form-label">Titolo</label>
             <input type="text" class="form-control" id="Titololibro" placeholder="Inserisci il titolo del libro">
+            <div class="form-text" id="basic-addon4">Titolo versione italiana</div>
+        </div>
+        <!--type film-->
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div><label for="genre" class="col-form-select">Genere</label></div>
+                <select class="form-select" id="genre" aria-label="Default select example">
+                    <option selected>Scegli il genere</option>
+                    <option value="1">Commedia</option>
+                    <option value="2">horror</option>
+                    <option value="3">Thriller</option>
+                    <option value="4">Drammatico</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-4">
+                <label for="year" class="form-label">Anno di Pubblicazione</label>
+                <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno">
+            </div>
+            <div class="col-12 col-lg-4">
+                <label for="codeisbn" class="form-label">ISBN#</label>
+                <input type="text" class="form-control" id="codeisbn" placeholder="Inserisci il codice ISBN#">
+            </div>
         </div>
